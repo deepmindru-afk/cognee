@@ -250,7 +250,8 @@ async def cognify(
             await cognee.add(data)
 
             try:
-                await cognee.cognify(graph_model=graph_model, custom_prompt=custom_prompt)
+                await cognee.cognify(graph_model=graph_model)
+                #await cognee.cognify(graph_model=graph_model, custom_prompt=custom_prompt)
                 logger.info("Cognify process finished.")
             except Exception as e:
                 logger.error("Cognify process failed.")
