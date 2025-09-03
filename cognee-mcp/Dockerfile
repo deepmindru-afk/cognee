@@ -59,6 +59,7 @@ RUN chmod +x /app/entrypoint.sh
 
 # Place executables in the environment at the front of the path
 ENV PATH="/app/.venv/bin:$PATH"
+RUN uv pip install -U --no-cache-dir sentencepiece mistral-common
 
 # Set environment variables for MCP server
 ENV PYTHONUNBUFFERED=1
