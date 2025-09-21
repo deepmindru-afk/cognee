@@ -33,9 +33,9 @@ if [[ $MIGRATION_EXIT_CODE -ne 0 ]]; then
 fi
 
 echo "Database migrations done."
+pip install -U --no-cache-dir sentencepiece mistral_common mistral-common[sentencepiece]
 
 echo "Starting server..."
-
 # Add startup delay to ensure DB is ready
 sleep 2
 
