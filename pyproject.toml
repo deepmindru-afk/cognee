@@ -28,6 +28,7 @@ dependencies = [
     "nltk>=3.9.1,<4.0.0",
     "numpy>=1.26.4, <=4.0.0",
     "pandas>=2.2.2,<3.0.0",
+    "mistral-common[sentencepiece]",
     # Note: New s3fs and boto3 versions don't work well together
     # Always use comaptible fixed versions of these two dependencies
     "s3fs[boto3]==2025.3.2",
